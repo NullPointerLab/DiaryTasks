@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccentSecondary</item>
+        <item name="android:progressBackgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="android:colorControlActivated">@color/colorBlackGray</item>
+        <item name="android:colorControlNormal">@color/colorGrey</item>
+        <item name="android:textColorHint">@color/colorBlackGray</item>
+    </style>
+
+</resources>

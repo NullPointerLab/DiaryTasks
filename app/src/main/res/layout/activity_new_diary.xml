@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.krishna.diary.activities.NewDiaryActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imgBtnCancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_cancel"
+            tools:ignore="contentDescription" />
+
+        <TextView
+            android:id="@+id/tvBtnSaveNewDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="4dp"
+            android:padding="0dp"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNewDiaryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@id/tvBtnSaveNewDiary"
+            android:gravity="end|center_horizontal"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etNewDiaryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBtnCancel"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:hint="Enter Title..."
+            android:inputType="textCapWords"
+            android:maxLength="256"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etNewDiaryInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutSub"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="Your diary information here..."
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="4"
+        android:padding="14dp"
+        android:textColor="@color/colorBlackGray"
+        android:textSize="@dimen/abc_text_size_subhead_material" />
+
+</RelativeLayout>

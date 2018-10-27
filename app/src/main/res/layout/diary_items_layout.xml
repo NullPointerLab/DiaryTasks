@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvRvDiaryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:text="date"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvRvDiaryTitle"
+                android:layout_alignTop="@id/tvRvDiaryTitle"
+                android:layout_below="@id/tvRvDiaryDate"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tvRvDiaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRvDiaryDate"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/view"
+                android:maxLength="256"
+                android:maxLines="1"
+                android:text="Title"
+                android:textColor="@color/colorBlackGray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRvDiaryInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRvDiaryTitle"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/view"
+                android:maxLength="512"
+                android:maxLines="2"
+                android:text="Diary Information"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

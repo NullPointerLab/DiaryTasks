@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6d0094</color>
+    <color name="colorPrimaryDark">#6d0094</color>
+    <color name="colorAccent">#ff2068</color>
+    <color name="colorAccentSecondary">#ad1a7f</color>
+    <color name="viewBg">#f8f8f8</color>
+    <color name="colorGrey">#999</color>
+    <color name="colorFaded">#da1253</color>
+    <color name="lbl_value">#222222</color>
+    <color name="colorLightGray">#f6f6f6</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="grayBlack">#212121</color>
+    <color name="colorBlackGray">#212121</color>
+    <color name="colorLightOrange">#ff7043</color>
+    <color name="colorOrange">#ff5722</color>
+    <color name="colorVeryLightOrange">#ff8a65</color>
+    <color name="colorBlue">#1e88e5</color>
+    <color name="colorNormalBlue">#2196f3</color>
+    <color name="colorLightBlue">#42a5f5</color>
+    <color name="googleBlue">#4184f3</color>
+</resources>
